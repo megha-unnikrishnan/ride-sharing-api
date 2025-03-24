@@ -117,24 +117,24 @@
 | POST   | `/users/register/` | Register a new user   |
 | POST   | `/users/login/`    | Login & get JWT token |
 
-For driver:
+**For driver:**
 
-    Registration:
+- **Registration:**
 
 ![Image](https://github.com/user-attachments/assets/3628ee61-0a25-449e-9e97-298749b8ba7e)
 
-    Login:
+- **Login:**
 
 ![Image](https://github.com/user-attachments/assets/fb3b0653-02ec-44b0-abbd-81a70ddacebe)
 
 
-For Rider:
+**For Rider:**
 
-    Registration:
+ - **Registration:**
 
 ![Image](https://github.com/user-attachments/assets/dffadb72-d6a3-4305-9cba-f21e0768e8a9)
 
-    Login:
+- **Login:**
 
 ![Image](https://github.com/user-attachments/assets/42d23429-d968-475f-8c1f-62e5217c0609)
 
@@ -150,15 +150,15 @@ For Rider:
 | PATCH  | `/api/rides/{ride_id}/status/` | Update ride status    |
 
 
-Create a ride:
+**Create a ride:**
 
 ![Image](https://github.com/user-attachments/assets/151e106e-3dee-4758-a1fb-8a141502e73f)
 
-Get ride details:
+**Get ride details:**
 
 ![Image](https://github.com/user-attachments/assets/02225b3d-b6ad-4e7a-a460-33ba76662d3e)
 
-Update Ride details:
+**Update Ride details:**
 
 ![Image](https://github.com/user-attachments/assets/8c8c0c47-ef71-4327-94d1-efe6c1003361)
 
@@ -172,19 +172,57 @@ Update Ride details:
 
 - Update the ride status to Matched.
 
-Available driver:
+**Available driver:**
 
 ![Image](https://github.com/user-attachments/assets/692ad610-e006-4b8e-a70c-2a289e7aaa14)
 
-Update the ride status to matched:
+**Update the ride status to matched:**
 
 ![Image](https://github.com/user-attachments/assets/0a2e26ae-3be5-4c70-8fef-e52f5b4d9b55)
 
-Driver accepts the ride:
+**Driver accepts the ride:**
 
 ![Image](https://github.com/user-attachments/assets/cfca8f6c-9089-4661-af47-1470d1274571)
 
-Update the ride status to accepted:
+**Update the ride status to accepted:**
 
 ![Image](https://github.com/user-attachments/assets/cd2d906a-bbf3-4b6c-8bb1-4d1399f96da2)
+
+## 📍 Real-Time Ride Tracking with Celery
+
+| Method | Endpoint                            | Description                     |
+|--------|-------------------------------------|---------------------------------|
+| PATCH  | `/api/rides/{ride_id}/update-location/` | Update ride’s real-time location |
+
+**Here the location updated manually:**
+
+![Image](https://github.com/user-attachments/assets/77226832-d414-4bab-a60a-227b8a81f680)
+
+**Real time:**
+
+![Image](https://github.com/user-attachments/assets/3811d627-20af-412d-9447-ad79b063ac75)
+
+## 🧠 Testing
+
+To run all tests:
+
+    python manage.py test
+
+## 📝 Conclusion
+
+This API provides a basic ride-sharing functionality with:
+
+        ✔️ User authentication
+        
+        ✔️ Ride management
+        
+        ✔️ Ride status updates
+        
+        ✔️ Ride matching
+        
+        ✔️ Real-time tracking with Celery
+
+Let me know if you need any more refinements! 🚀
+
+
 
