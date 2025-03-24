@@ -145,9 +145,9 @@
 
 | Method | Endpoint                     | Description            |
 |--------|------------------------------|------------------------|
-| POST   | `/api/rides/`                | Create a new ride     |
-| GET    | `/api/rides/{ride_id}/`      | View ride details     |
-| PATCH  | `/api/rides/{ride_id}/status/` | Update ride status    |
+| POST   | `/rides/`                | Create a new ride     |
+| GET    | `/rides/{ride_id}/`      | View ride details     |
+| PATCH  | `/rides/{ride_id}/status/` | Update ride status    |
 
 
 **Create a ride:**
@@ -192,7 +192,7 @@
 
 | Method | Endpoint                            | Description                     |
 |--------|-------------------------------------|---------------------------------|
-| PATCH  | `/api/rides/{ride_id}/update-location/` | Update ride’s real-time location |
+| PATCH  | `/rides/{ride_id}/update-location/` | Update ride’s real-time location |
 
 **Here the location updated manually:**
 
