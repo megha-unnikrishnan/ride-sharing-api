@@ -92,7 +92,7 @@
 
     ✔️ Start Redis server
     
-        redis-server
+         sudo service redis-server start
 
     ✔️ Start Celery worker
     
